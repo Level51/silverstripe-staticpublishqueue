@@ -155,6 +155,7 @@ class StaticCacheFullBuildJob extends Job
         }
 
         $this->handleFailedUrl($url, $meta);
+        $this->markUrlAsProcessed($url);
     }
 
     protected function updateCompletedState(): void
